@@ -1,4 +1,4 @@
-hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,*.i91porn.*,*.tbrapi.*,*.hitik.*,*.tiansexyl.*,*.woailuojingdong.com,*.dayuxiangqian.com
+hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,*.my10api.com
 
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
@@ -35,16 +35,7 @@ https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body htt
 ^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/znzj.js
 
 # 91短视频解锁VIP和金币- (*.i91porn.*)
-http[s]?:\/\/.+\.(.*91.*)\.(com|xyz|net|org)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/lsp.js
-
-#汤头条- (*.*.tbrapi.*)
-http[s]?:\/\/.+\.(.*tbrapi.*)\.(com|xyz|net|org)(:\d{2,5})?\/api.php/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/lsp.js
-
-#撸先生- (*.hitik.*,*.dayuxiangqian.com)
-http[s]?:\/\/.+\.((.*hitik.*)|(.*tiansexyl.*))\.(com|tips|app|xyz|net|tv|org)(:\d{2,5})?\/api.php.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/lsp.js
-
-#精东- (*.woailuojingdong.com,*.dayuxiangqian.com)
-http[s]?:\/\/.+\.((.*woailuojingdong.*)|(.*dayuxiangqian.*))\.(com|cn)(:\d{2,5})?\/cxapi/.+$ url script-response-body jd.js
+^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/91.js
 
 #鲨鱼记账 需要登录 解锁会员记账权限 -(api.shayujizhang.com)
 https://api.shayujizhang.com/account/detail/info/ url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/syjz.js
