@@ -1,4 +1,4 @@
-hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com
+hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, www.googleapis.com, youtubei.googleapis.com,
 
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
@@ -47,8 +47,24 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 ^https?://(sdk|wb)app.uve.weibo.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list|photo/info) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 
-# youtube去广告- （*.googlevideo.com,www.youtube.com,s.youtube.com）
-^https?:\/\/[\w-]+\.googlevideo\.com\/.+(&oad|ctier) url reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
-^https?:\/\/\s.youtube.com/api/stats/qoe?.*adformat= url reject
+# youtube去广告- （*.googlevideo.com, s.youtube.com, www.youtube.com, www.googleapis.com, youtubei.googleapis.com）
+^https?:\/\/.+\.googlevideo\.com\/.+oad= url reject-img
+^https?:\/\/.+\.googlevideo\.com\/.+owc= url reject-img
+^https?:\/\/.+\.googlevideo\.com\/ptracking url reject-img
+^https?:\/\/.+\.googlevideo\.com\/videogoodput url reject-img
+^https?:\/\/.+\.youtube\.com\/.+adformat url reject-img
+^https?:\/\/.+\.youtube\.com\/.+get_ads url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/atr url reject-img
+^https?:\/\/.+\.youtube\.com\/api\/stats\/qoe url reject-img
+^https?:\/\/.+\.youtube\.com\/csi_204 url reject-img
+^https?:\/\/.+\.youtube\.com\/error_204 url reject-img
+^https?:\/\/.+\.youtube\.com\/gen_204 url reject-img
+^https?:\/\/.+\.youtube\.com\/generate_204 url reject-img
+^https?:\/\/.+\.youtube\.com\/get_midroll url reject-img
+^https?:\/\/.+\.youtube\.com\/pagead url reject-img
+^https?:\/\/.+\.youtube\.com\/pcs\/activeview url reject-img
+^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
+^https?:\/\/.+\.googleapis.com/.+ad_break url reject-img
+^https?:\/\/.+\.googleapis.com/.+log_event url reject-img
+^https?:\/\/.+\.googleapis.com/adsmeasurement url reject-im
