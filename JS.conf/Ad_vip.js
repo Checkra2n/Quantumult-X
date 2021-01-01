@@ -1,4 +1,4 @@
-hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com , appfan.im,
+hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com , appfan.im,ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -39,6 +39,9 @@ https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body htt
 #精东无限购买- (*.woailuojingdong.com,*.dayuxiangqian.com)
 ^http[s]?:\/\/.+\.((.*woailuojingdong.*)|(.*dayuxiangqian.*))\.(com|cn)(:\d{2,5})?\/cxapi/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/jd.js
 
+# 香蕉视频VIP-(ios.xiangjiaoapps.com, apple.xiangjiaoapps.com, *.xiangxiangapps.com)
+^https?:\/\/.*\.(fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
+
 #鲨鱼记账 需要登录 解锁会员记账权限 -(api.shayujizhang.com)
 https://api.shayujizhang.com/account/detail/info/ url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/syjz.js
 
@@ -60,3 +63,5 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 
 #PriceTag 去首页广告-(appfan.im)
 ^https?:\/\/appfan\.im\/api\/v2\/topics\/.*?/posts.* url script-response-body https://raw.githubusercontent.com/alpha87/QuantumultX-Profiles/master/PriceTagAD.js
+
+
