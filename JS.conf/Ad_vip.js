@@ -1,4 +1,4 @@
-hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com , appfan.im,
+hostname=app.bilibili.com,api.bilibili.com,,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com , appfan.im , ssp-x.yoloho.com,
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -58,7 +58,7 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 ^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
 ^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
 
-#PriceTag 去首页广告-(appfan.im)
+#PriceTag 去首页广告-(appfan.im , ssp-x.yoloho.com)
 ^https?:\/\/appfan\.im\/api\/v2\/topics\/.*?/posts.* url script-response-body https://raw.githubusercontent.com/alpha87/QuantumultX-Profiles/master/PriceTagAD.js
 
 #酷我音乐vip
