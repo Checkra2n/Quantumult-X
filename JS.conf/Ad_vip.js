@@ -82,6 +82,6 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 ^https?:\/\/api\.smzdm\.com\/v\d\/util\/(banner|loading) url reject-dict
 ^https?:\/\/app-api\.smzdm\.com\/util\/loading url reject-dict
 
-#桃子解锁会员去广告
+#桃子解锁会员去广告-（api.*.xyz）
 ^http:\/\/api\.(.+)\.xyz\/fast-cloud\/ads\/fetch url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzad.js
 ^http:\/\/api\.(.+)\.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzvip.js
