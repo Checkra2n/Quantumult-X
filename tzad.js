@@ -4,7 +4,7 @@
 QX:
 [rewrite_local]
 #桃子去广告
-^http:\/\/api\.(.+)\.xyz\/fast-cloud\/ads\/fetch url script-response-body taozi.js
+^http:\/\/api\.(.+)\.xyz\/fast-cloud\/ads\/fetch url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzad.js
 
 [mitm]
 hostname = api.*.xyz,
