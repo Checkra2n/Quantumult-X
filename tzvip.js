@@ -3,7 +3,7 @@
 QX:
 [rewrite_local]
 #桃子视频解锁会员
-^http:\/\/api\.(.+)\.xyz\/fast-cloud\/user\/info url script-response-body tz.js
+^http:\/\/api\.(.+)\.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzvip.js
 
 [mitm]
 hostname = api.*.xyz,
@@ -38,7 +38,7 @@ obj = {
     "newUser" : false,
     "accountLevel" : null,
     "authType" : 1,
-    "machineCode" : "iPhone 7|13.5"
+    "machineCode" : "iPhone X|14.2"
   },
   "data" : null,
   "total" : null
