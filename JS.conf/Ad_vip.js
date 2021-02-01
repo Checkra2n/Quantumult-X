@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api.*.xyz,*.tbrapi.*
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api.*.xyz,api.tbrapi.com
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -86,5 +86,5 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 #精东无限购买- (*.woailuojingdong.com,*.dayuxiangqian.com)
 ^http[s]?:\/\/.+\.((.*woailuojingdong.*)|(.*dayuxiangqian.*))\.(com|cn)(:\d{2,5})?\/cxapi/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/jd.js
 
-#汤头条-(*.tbrapi.*)
-^http[s]?:\/\/.+\.(.*tbrapi.*)\.(com|xyz|net|org)(:\d{2,5})?\/api.php/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/lsp.js
+#汤不热永久VIP-(api.tbrapi.com)
+http:\/\/api\.tbrapi\.com\:8080\/api\.php\/api\/user\/userinfo url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/tbr.js
