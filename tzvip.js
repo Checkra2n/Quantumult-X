@@ -18,8 +18,8 @@ obj = {
   "code" : "0000",
   "message" : "",
   "result" : {
-    "account" : "吾爱",
-    "nickName" : "吾爱",
+    "account" : "大佬牛皮。",
+    "nickName" : "大佬牛皮。",
     "stars" : 0,
     "channelCode" : null,
     "vipValidDate" : 4092579678000,
