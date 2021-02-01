@@ -85,12 +85,12 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 ^http:\/\/api\.(.+)\.xyz\/fast-cloud\/ads\/fetch url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzad.js
 ^http:\/\/api\.(.+)\.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzvip.js
 
-# 91短视频解锁VIP和金币- (*.i91porn.*)
+#91短视频解锁VIP和金币- (*.i91porn.*)
 ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/91.js
 
 #精东无限购买- (*.woailuojingdong.com,*.dayuxiangqian.com)
 ^http[s]?:\/\/.+\.((.*woailuojingdong.*)|(.*dayuxiangqian.*))\.(com|cn)(:\d{2,5})?\/cxapi/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/jd.js
 
- #黄瓜视频完美解锁-（api1000.gdqeb.club）
- https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
+#黄瓜视频完美解锁-（api1000.gdqeb.club）
+^https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
  
