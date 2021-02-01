@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api.*.xyz,.*tbrapi.*
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,app.xunjiepdf.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api.*.xyz,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -76,6 +76,11 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 ^https?:\/\/api\.smzdm\.com\/v\d\/util\/(banner|loading) url reject-dict
 ^https?:\/\/app-api\.smzdm\.com\/util\/loading url reject-dict
 
+#youtube去广告-（*.googlevideo.com,*.googleapis.com）
+(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) url 302 $1$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
+^https?:\/\/.+\.googleapis\.com\/(adsmeasurement|.+ad_break) url reject-img
+
 #桃子解锁会员去广告-（api.*.xyz）
 ^http:\/\/api\.(.+)\.xyz\/fast-cloud\/ads\/fetch url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzad.js
 ^http:\/\/api\.(.+)\.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/tzvip.js
@@ -86,5 +91,6 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 #精东无限购买- (*.woailuojingdong.com,*.dayuxiangqian.com)
 ^http[s]?:\/\/.+\.((.*woailuojingdong.*)|(.*dayuxiangqian.*))\.(com|cn)(:\d{2,5})?\/cxapi/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/jd.js
 
-#汤不热永久VIP-(.*tbrapi.*)
-^https?:\/\/.+\.(.*tbrapi.*)\.(com|tips|app|xyz)(:\d{2,5})?\/api.php/.*$ url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/91-ttt.js
+ #黄瓜视频完美解锁-（api1000.gdqeb.club）
+ https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
+ 
