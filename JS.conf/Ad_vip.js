@@ -27,6 +27,10 @@ hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.c
 # 漫画去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
 
+#bilibili大会员
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.jucatyo.com/playurl
+https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.jucatyo.com/season
+
 #海豚记账 -(book.haitunwallet.com)
 https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/HTJZ.js
 
