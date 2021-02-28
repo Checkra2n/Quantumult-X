@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,lginstaacademy.com
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -87,5 +87,5 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 #黄瓜视频完美解锁-（api1000.gdqeb.club）
 ^https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
  
-#酷咪视频无限看
- ^https:\/\/lginstaacademy\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/) url script-response-body kumiyw.js
+#酷咪视频无限看-（lginstaacademy.com）
+ ^https:\/\/lginstaacademy\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/) url script-response-body https://raw.githubusercontent.com/anran180224/Quantumult-X/main/km.js
