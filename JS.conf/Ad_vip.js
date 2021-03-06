@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,a1008610010.yohui.vip,
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,69shipin.vip,jk.5apk.cn,lginstaacademy.com,
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -72,8 +72,17 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 #精东无限购买- (*.woailuojingdong.com,*.dayuxiangqian.com)
 ^https?:\/\/.+\.((.*woailuojingdong.*)|(.*dayuxiangqian.*))\.(com|cn)(:\d{2,5})?\/cxapi/.+$ url script-response-body https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/jd.js
 
-#黄瓜视频完美解锁-（api1000.gdqeb.club）
+ #黄瓜视频完美解锁-（api1000.gdqeb.club）
 ^https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
  
- #奥里给视频——（a1008610010.yohui.vip）
- ^https?:\/\/1008610010\.yohui\.vip\/index\.php\/Api\/LiveApi\/getMovietime url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/aoligei/aoligei.js
+#69视频解锁会员-（69shipin.vip）
+^http:\/\/69shipin\.vip\/api\/user\/personal url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
+^http:\/\/69shipin\.vip\/api\/community\/edit url response-body "code":\d+ response-body "code":200-（）
+ 
+#辣椒视频解锁会员——（jk.5apk.cn）
+^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
+ 
+#酷米视频解锁会员-（lginstaacademy.com）
+ ^https:\/\/lginstaacademy\.com\/\/api\/member url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/kumi/kumisp2.js
+
+ 
