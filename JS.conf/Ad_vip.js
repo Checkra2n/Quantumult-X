@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,69shipin.vip,jk.5apk.cn,
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,69shipin.vip,jk.5apk.cn,
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -60,11 +60,6 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 # 其他
 ^https?:\/\/api\.smzdm\.com\/v\d\/util\/(banner|loading) url reject-dict
 ^https?:\/\/app-api\.smzdm\.com\/util\/loading url reject-dict
-
-#youtube去广告-（*.googlevideo.com,*.googleapis.com）
-(^https?:\/\/[\w-]+\.googlevideo\.com\/.+)(ctier=L)(&.+) url 302 $1$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier) url reject
-^https?:\/\/.+\.googleapis\.com\/(adsmeasurement|.+ad_break) url reject-img
 
 #91短视频解锁VIP和金币- (*.i91porn.*)
 ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/91.js
