@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,69shipin.vip,jk.5apk.cn,lginstaacademy.com,
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,69shipin.vip,jk.5apk.cn,
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -81,8 +81,4 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
  
 #辣椒视频解锁会员——（jk.5apk.cn）
 ^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
- 
-#酷米视频解锁会员-（lginstaacademy.com）
-^https:\/\/lginstaacademy\.com\/\/api\/member url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/kumi/kumisp2.js
-
  
