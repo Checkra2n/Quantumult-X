@@ -83,6 +83,6 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 ^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
  
 #酷米视频解锁会员-（lginstaacademy.com）
- ^https:\/\/lginstaacademy\.com\/\/api\/member url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/kumi/kumisp2.js
+^https:\/\/lginstaacademy\.com\/\/api\/member url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/kumi/kumisp2.js
 
  
