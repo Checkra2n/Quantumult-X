@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com, *.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com ,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,lginstaacademy.com
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,mapi.weibo.com, *.uve.weibo.com,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,m.baidu.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club,lginstaacademy.com
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -36,18 +36,6 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 # 去微博应用内广告- （mapi.weibo.com, *.uve.weibo.com）
 ^https?://(sdk|wb)app.uve.weibo.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list|photo/info) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
-
-# youtube去广告- （*.googlevideo.com, s.youtube.com, www.youtube.com, youtubei.googleapis.com）
-^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
-^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ url reject-img
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ url reject-img
-^https?:\/\/.+\.youtube\.com\/get_midroll_ url reject-img
-^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite url reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/ads url reject-img
-^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat url reject-img
-^https?:\/\/.+\.youtube\.com\/pagead\/ url reject-img
-^https?:\/\/.+\.youtube\.com\/ptracking url reject-img
 
 #酷我音乐vip-（musicpay.kuwo.cn,vip1.kuwo.cn）
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=2
