@@ -1,0 +1,1 @@
+shadowsocks=122.9.54.8:3413, method=chacha20-ietf-poly1305, password=76907a8734aaeafe58724c8e9a40c5eec336880e223b05500d4990c463841e47, obfs=http, obfs-host=bing.com, obfs-uri=/resource/file, fast-open=false, udp-relay=false, tag=美国 - 洛杉矶
