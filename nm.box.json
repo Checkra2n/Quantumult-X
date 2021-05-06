@@ -1,0 +1,105 @@
+{
+  "id": "ningmeng.app.sub",
+  "name": "柠檬应用订阅",
+  "author": "@ningmeng",
+  "icon": "http://nm66.top/1.jpg",
+  "repo": "http://nm66.top/",
+  "apps": [
+   {
+      "id": "fhxz",
+      "name": "富豪小镇",
+      "keys": ["fhxzurl", "fhxzhd","fhxzurl2","fhxzhd2","fhxzurl3","fhxzhd3","fhxzurl4","fhxzhd4","fhxzurl5","fhxzhd5"],
+      "author": "@ningmeng",
+      "settings": [{
+            "id": "fhxzsetting",
+            "name": "当前账号",
+            "val": "1",
+            "type": "number",
+            "desc": "当前账号对应"
+    },
+    {
+            "id": "fhxzcount",
+            "name": "账号个数",
+            "val": "1",
+            "type": "number",
+            "desc": "需要几个账号，数字为几"
+    }],
+            "repo": "http://nm66.top/fhxz.js",
+            "icons": ["http://nm66.top/1.jpg", "http://nm66.top/1.jpg"],
+            "script": "http://nm66.top/fhxz.js"
+    },
+     {
+    "id": "kxdfs",
+    "name": "开心大丰收",
+    "keys": ["kxdfsheader", "kxdfsheader2", "kxdfsheader3", "kxdfsheader4", "kxdfsheader5"],
+    "author": "@ningmeng",
+    "settings": [
+      {
+        "id": "kxdfssetting",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },
+      {
+        "id": "kxdfscount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      }],
+    "repo": "http://nm66.top/kxdfs.js",
+    "icons": ["http://nm66.top/1.jpg", "http://nm66.top/1.jpg"],
+    "script": "http://nm66.top/kxdfs.js"
+  },
+      {
+      "id": "dyd",
+    "name": "dyd",
+    "keys": ["rwhd", "rwurl"],
+    "author": "@ningmeng",
+    "settings": [
+      {
+        "id": "rwsetting",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },
+      {
+        "id": "rwcount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      }],
+    "repo": "http://nm66.top/dyd.js",
+    "icons": ["http://nm66.top/1.jpg", "http://nm66.top/1.jpg"],
+    "script": "http://nm66.top/dyd.js"
+  },
+      {
+      "id": "dydhb",
+    "name": "dydhb",
+    "keys": ["xnmhd", "xnmurl"],
+    "author": "@ningmeng",
+    "settings": [
+      {
+        "id": "xnmsetting",
+        "name": "当前账号",
+        "val": "1",
+        "type": "number",
+        "desc": "当前账号对应"
+      },
+      {
+        "id": "xnmcount",
+        "name": "账号个数",
+        "val": "1",
+        "type": "number",
+        "desc": "需要几个账号，数字为几"
+      }],
+    "repo": "http://nm66.top/dydhb.js",
+    "icons": ["http://nm66.top/1.jpg", "http://nm66.top/1.jpg"],
+    "script": "http://nm66.top/dydhb.js"
+  }
+  ]
+  
+}
