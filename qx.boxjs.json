@@ -59,74 +59,6 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzz.png"
       ]
     },
-      {
-      "id": "jd_ddgc",
-      "name": "东东工厂",
-      "settings": [
-        {
-          "id": "dd_showLog",
-          "name": "日志开关",
-          "val": false,
-          "type": "boolean",
-          "desc": "是否打开接口返回详情日志打印，默认关闭"
-        },
-        {
-          "id": "dd_autoCharge",
-          "name": "自动充电",
-          "val": false,
-          "type": "boolean",
-          "desc": "当电量足够充满当前商品是，是否自动充电，默认不自动充电"
-        },
-        {
-          "id": "dd_notifyTime",
-          "name": "东东工厂通知时间",
-          "val": "",
-          "type": "text",
-          "desc": "防止频繁通知，可以设置通知时间，24小时制，比如 19 或者 19:30，多个时间以英文逗号隔开."
-        }
-      ],
-      "author": "@whyour",
-      "repo": "https://github.com/whyour/hundun/blob/master/quanx/dd_factory.js",
-      "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/dd_factory.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jd_factory.png"
-      ]
-    },
-    {
-      "id": "jx_gc",
-      "name": "京喜工厂",
-      "settings": [
-        {
-          "id": "gc_showLog",
-          "name": "日志开关",
-          "val": false,
-          "type": "boolean",
-          "desc": "是否打开接口返回详情日志打印，默认关闭"
-        },
-        {
-          "id": "gc_autoCharge",
-          "name": "自动充能",
-          "val": true,
-          "type": "boolean",
-          "desc": "收取能量后自动充能，默认不自动充"
-        },
-        {
-          "id": "gc_notifyTime",
-          "name": "京喜工厂通知时间",
-          "val": "",
-          "type": "text",
-          "desc": "防止频繁通知，可以设置通知时间，24小时制，比如 19 或者 19:30，多个时间以英文逗号隔开."
-        }
-      ],
-      "author": "@whyour",
-      "repo": "https://github.com/whyour/hundun/blob/master/quanx/jx_factory.js",
-      "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_factory.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdgc_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdgc.png"
-      ]
-    },
     {
       "id": "scriptable",
       "name": "桌面组件",
@@ -709,6 +641,6 @@
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
       ]
-    }
+    } 
   ]
 }
