@@ -31,9 +31,7 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign.png"
       ]
-    }
-  ]
-}
+    },
     {
       "id": "jdzz",
       "name": "京东赚赚小程序",
@@ -61,7 +59,7 @@
         "https://raw.githubusercontent.com/58xinian/icon/master/jdzz.png"
       ]
     },
-        {
+      {
       "id": "jd_ddgc",
       "name": "东东工厂",
       "settings": [
@@ -711,4 +709,6 @@
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
       ]
-    },
+    }
+  ]
+}
