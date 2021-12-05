@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,jk.5apk.cn,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com,duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com,duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -132,7 +132,4 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
 
  #黄瓜视频完美解锁-（api1000.gdqeb.club）
 ^https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
- 
-#辣椒视频解锁会员——（jk.5apk.cn）
-^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
  
