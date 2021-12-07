@@ -3,7 +3,7 @@
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # UPDATED: 2021-11-25 17:41:53
 # HOST-SUFFIX: 25
-HOST, ichnaea-web.netflix.com, Netflix
+HOST-SUFFIX, ichnaea-web.netflix.com, Netflix
 HOST-SUFFIX,fast.com,Netflix
 HOST-SUFFIX,netflix.ca,Netflix
 HOST-SUFFIX,netflix.com,Netflix
