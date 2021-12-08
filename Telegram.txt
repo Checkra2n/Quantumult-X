@@ -1,15 +1,21 @@
-# > Telegram
-host-suffix, t.me, Telegram
-host-suffix, tdesktop.com, Telegram
-host-suffix, telegra.ph, Telegram
-host-suffix, telegram.me, Telegram
-host-suffix, telegram.org, Telegram
-host-suffix, telesco.pe, Telegram
-ip-cidr, 91.108.4.0/22, Telegram
-ip-cidr, 91.108.8.0/21, Telegram
-ip-cidr, 91.108.16.0/21, Telegram
-ip-cidr, 91.108.56.0/22, Telegram
-ip-cidr, 149.154.160.0/20, Telegram
-ip6-cidr, 2001:67c:4e8::/48, Telegram
-ip6-cidr, 2001:b28:f23d::/48, Telegram
-ip6-cidr, 2001:b28:f23f::/48, Telegram
+# Telegram
+DOMAIN-SUFFIX,t.me,Telegram
+DOMAIN-SUFFIX,tdesktop.com,Telegram
+DOMAIN-SUFFIX,telegra.ph,Telegram
+DOMAIN-SUFFIX,telegram.me,Telegram
+DOMAIN-SUFFIX,telegram.org,Telegram
+DOMAIN-SUFFIX,telesco.pe,Telegram
+IP-CIDR,91.108.4.0/22,Telegram
+IP-CIDR,91.108.8.0/22,Telegram
+IP-CIDR,91.108.12.0/22,Telegram
+IP-CIDR,91.108.16.0/22,Telegram
+IP-CIDR,91.108.20.0/22,Telegram
+IP-CIDR,91.108.56.0/22,Telegram
+IP-CIDR,91.105.192.0/23,Telegram
+IP-CIDR,149.154.160.0/20,Telegram
+IP-CIDR,185.76.151.0/24,Telegram
+IP6-CIDR,2001:b28:f23d::/48,Telegram
+IP6-CIDR,2001:b28:f23f::/48,Telegram
+IP6-CIDR,2001:67c:4e8::/48,Telegram
+IP6-CIDR,2001:b28:f23c::/48,Telegram
+IP6-CIDR,2a0a:f280::/32,Telegram
