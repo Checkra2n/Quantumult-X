@@ -1,8 +1,8 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com,duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com,duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
-# 哔哩哔哩(api.bilibili.com)
+# 哔哩哔哩(*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com)
 # 去除动态中的话题
 ^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr url reject-dict
 # 去除动态中的最常访问
@@ -10,13 +10,13 @@ hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.c
 # 可能的一些推广(beta)
 ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? url reject-dict
 # 推荐去广告
-^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 # 追番去广告
 ^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 # 直播去广告
 ^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 # 动态去广告
-^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_new\? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\? url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 # 开屏去广告
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 # 标签页处理
@@ -25,6 +25,7 @@ hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.c
 ^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
 # 漫画去广告
 ^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-dict
+^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/ListFlash url reject-dict
 
 #海豚记账 -(book.haitunwallet.com)
 https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/HTJZ.js
