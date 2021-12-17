@@ -1,4 +1,4 @@
-hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com,duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com
+hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,book.haitunwallet.com,api.shayujizhang.com,musicpay.kuwo.cn,vip1.kuwo.cn,*.my10api.com,*.woailuojingdong.com,*.dayuxiangqian.com,homepage-api.smzdm.com,haojia-api.smzdm.com,article-api.smzdm.com,haojia.m.smzdm.com,app-api.smzdm.com,s-api.smzdm.com,api1000.gdqeb.club,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com,duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com,api.v1.chuniao.me
 # WPS -(account.wps.*)
 ^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 
@@ -134,3 +134,9 @@ https://api.shayujizhang.com/account/detail/info/ url script-response-body https
  #黄瓜视频完美解锁-（api1000.gdqeb.club）
 ^https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
  
+#雏唧解锁无限看（api.v1.chuniao.me）
+#^http:\/\/api\.v1\.chuniao\.me\/app\/api\/site\/version url reject-200
+^http[s]?:\/\/api\.v1\.chuniao\.me\/app\/api\/video\/buy url response-body "code":\d+ response-body "code":200
+^http[s]?:\/\/api\.v1\.chuniao\.me\/app\/api\/video\/buy url response-body "message":"(.*?)" response-body "message":"操作成功"
+^http[s]?:\/\/api\.v1\.chuniao\.me\/app\/api\/.+ url request-header (\r\n)X-TOKEN:.+(\r\n) request-header $1X-TOKEN:xOIby5DWr2tCf/OxKvnSZoHnD36X8YyzazHwXpj8r+Vqkqa30wWe5PIarCBfLcUuYQfrSQKrtwdb7Un7dQesn3opn4Dw39HpJtFipm7B7Np0SCBYKelhyBMOy9ZKbIhpWA22y6C9NxEQOk9JVEgPj5DoXrwpTzqkFO6t4DGaUHV+8FFPKzjgiy2HEq5lPwlXMwfGYQI+q9//nOHdgesOOOWx/lBBH+ElcJU5064TnTF7NUGIf2YAbqRUP2jjhxT+VY3sSYAj/iz38RVWyhjNXiI3EtGb2VJNJ1vfLvkEdN5LLWbJ0G+hDD/pqcCaqVk+VT6sYUKVv4GPjHNgRldEzdBlFhpCdUxyHsEwkc+VRkuwO3mukm0IK83qTaDiZ49wKOdXohxpdBCI79ge+rkLd8zx1UwZYqC45cOvnI9n5/WF2uYVXF67SK85l3QD/VSEXw5hzKhuxA5V8v5Wfu50l8aztGnvdB150nX2E3jYExAmf9k2qfTLwIXkrdRFMYy267GKDdRyb4wU8jBeGuBOwOFa6iH4y8Xi6rjzkwmiRJ+9L34bN501cQY2fV+FTc4qSeQFvIP34pqvMku24bIty1io8nWqR7FfKw/XI4blG1M3G/c7eLfsDe/4JMs7KljkoslamkdqyXLmxfKmh0f7q/+STHDVJBCweTHCVJN6/eWWmmAbK1FCfyybP5/Zv3+W$2
+
