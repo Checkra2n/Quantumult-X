@@ -31,7 +31,7 @@ hostname=*.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com,account.wps.*,
 https:\/\/book\.haitunwallet\.com\/app\/vip\/status url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/HTJZ.js
 
 #鲨鱼记账 需要登录 解锁会员记账权限 -(api.shayujizhang.com)
-https://api.shayujizhang.com/account/detail/info/ url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/syjz.js
+https://api.shayujizhang.com/account/detail/info/ url script-response-body https://raw.githubusercontent.com/zalmanwen/oooooo/master/xxx/xxxx/CNSPCrack.js
 
 #酷我音乐vip-（musicpay.kuwo.cn,vip1.kuwo.cn）
 ^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?uid\=\d+ url 302 http://musicpay.kuwo.cn/music.pay?uid=2
