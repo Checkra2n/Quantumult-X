@@ -114,7 +114,19 @@
         "青龙 docker 频道：【<a href=\"https://t.me/qiongqiya\">电报频道</a>】"
       ]
     },
-        {
+    {
+      "id": "smzdm",
+      "name": "什么值得买",
+      "keys": ["smzdm_cookie"],
+      "author": "@wangfei021325, @chavyleung",
+      "repo": "https://github.com/chavyleung/scripts/tree/master/smzdm",
+      "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/smzdm.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/smzdm.png"
+      ]
+    },   
+   {
       "id": "ximalaya",
       "name": "喜马拉雅",
       "keys": ["chavy_cookie_ximalaya"],
