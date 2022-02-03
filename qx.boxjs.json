@@ -6,60 +6,6 @@
   "repo": "https://github.com/Checkra2n", 
   "apps": [
     {
-      "id": "jx_tokens",
-      "name": "京喜tokens",
-      "keys": ["jx_tokens"],
-      "descs_html": [
-        "请勿随意在输入框修改内容，建议通过脚本去获取Token，若要修改，请按照 JSON 数组格式修改。",
-        "脚本地址【<a href=\"https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js\">京喜多账号Token获取</a>】,并按照此脚本注释进行配置"
-      ],
-      "settings": [
-        {
-          "id": "jx_tokens",
-          "name": "Tokens",
-          "val": "",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 8,
-          "desc": "Tokens 列表 (JSON 数组格式)"
-        }
-      ],
-      "author": "@whyour",
-      "repo": "https://github.com/whyour/hundun/blob/master/quanx/jx_tokens.js",
-      "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jx_sign.png"
-      ]
-    },
-    {
-      "id": "jdzz",
-      "name": "京东赚赚小程序",
-      "settings": [
-        {
-          "id": "zz_showLog",
-          "name": "日志开关",
-          "val": false,
-          "type": "boolean",
-          "desc": "是否打开接口返回详情日志打印，默认关闭"
-        },
-        {
-          "id": "jd_zzExchangePrize",
-          "name": "红包金额",
-          "val": "",
-          "type": "text",
-          "desc": "填写要兑换的红包金额，不填写不自动兑换，例如：0.25，2，5，10，50，100"
-        }
-      ],
-      "author": "@whyour",
-      "repo": "https://github.com/whyour/hundun/blob/master/quanx/jdzz.js",
-      "script": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js",
-      "icons": [
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdzz_mini.png",
-        "https://raw.githubusercontent.com/58xinian/icon/master/jdzz.png"
-      ]
-    },
-    {
       "id": "scriptable",
       "name": "桌面组件",
       "keys": [
@@ -71,48 +17,6 @@
       ],
       "author": "@dompling",
       "repo": ""
-    },
-    {
-      "id": "ql",
-      "name": "青龙 Cookie 同步",
-      "keys": [
-        "@ql.ip",
-        "@ql.username",
-        "@ql.password"
-      ],
-      "settings": [
-        {
-          "id": "@ql.ip",
-          "name": "青龙登陆的域名或IP:端口号",
-          "val": "",
-          "type": "text",
-          "placeholder": "111.21.0.32:5700"
-        },
-        {
-          "id": "@ql.username",
-          "name": "账号",
-          "val": "",
-          "type": "text"
-        },
-        {
-          "id": "@ql.password",
-          "name": "密码",
-          "val": "",
-          "type": "text"
-        }
-      ],
-      "icons": [
-        "https://qinglong.whyour.cn/qinglong.png",
-        "https://qinglong.whyour.cn/qinglong.png"
-      ],
-      "author": "@dompling",
-      "repo": "https://github.com/dompling/Script/blob/master/jd/ql_cookie_sync.js",
-      "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/ql_cookie_sync.js",
-      "descs_html": [
-        "青龙 docker 的安装方式请移步 tg 频道",
-        "青龙 docker 作者仓库：【<a href=\"https://github.com/whyour\">github</a>】",
-        "青龙 docker 频道：【<a href=\"https://t.me/qiongqiya\">电报频道</a>】"
-      ]
     },
     {
       "id": "smzdm",
@@ -138,36 +42,6 @@
       ],
       "script": "https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js"
     },
-     {
-    "id": "PushBoxjsCookie",
-    "name": "V2pCookie",
-    "keys": ["v2purl", "v2token"],
-    "settings": [{
-        "id": "v2pcookieupdate",
-        "name": "V2P上传任务",
-        "val": false,
-        "type": "boolean",
-        "desc": "打开才会上传cookie,用来刚开始使用的时候。"
-      }, {
-        "id": "v2purl",
-        "name": "主页地址",
-        "val": "",
-        "type": "text",
-        "desc": "请到设置查询,例子:http://192.168.1.102:12521"
-      },
-      {
-        "id": "v2token",
-        "name": "WEBHOOK TOKEN",
-        "val": "",
-        "type": "text",
-        "desc": "请到设置查询,例子:a8c259b2-67fe-D-7bfdf1f55cb3"
-      }
-    ],
-    "author": "@cenbomin",
-    "repo": ["https://raw.githubusercontent.com/CenBoMin/GithubSync"],
-    "script": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/ELECV2PJS/PushBoxjsCookie_elecV2p.js",
-    "icons": ["https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/elecv2p-mini.png", "https://raw.githubusercontent.com/Ariszy/Private-Script/master/img/elecv2p.png"]
-  },
   {
     "id": "txstockapp",
     "name": "自选羊毛股",
@@ -398,32 +272,6 @@
     "repo": "https://github.com/NobyDa/Script/tree/master/JD-DailyBonus",
     "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/jd.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png"]
   },
-  {
-    "id": "iQIYI",
-    "name": "爱奇艺",
-    "keys": ["CookieQY"],
-    "descs_html": [
-      "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js\">脚本注释</a></h4>"
-    ],
-    "settings": [{
-      "id": "iQIYI_LogDetails",
-      "name": "响应日志",
-      "val": false,
-      "type": "boolean",
-      "desc": ""
-    }, {
-      "id": "iQIYI_TimeOut",
-      "name": "超时退出 (毫秒)",
-      "val": "",
-      "type": "number",
-      "placeholder": "默认无超时 (点击以展开说明)",
-      "desc": "按需填写, 用于由网络不稳定引起的脚本中断, 正常用户建议留空. 如QX日志出现\"JS Context timeout\"后脚本中断时, 建议填写6000"
-    }],
-    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js",
-    "author": "@NobyDa",
-    "repo": "https://github.com/NobyDa/Script/blob/master/iQIYI-DailyBonus/iQIYI.js",
-    "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/iQIYI.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/iQIYI.png"]
-  }, 
   {
     "id": "BaiduTB",
     "name": "百度贴吧",
