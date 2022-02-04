@@ -397,7 +397,7 @@
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
       ]
     }, 
-{
+    {
       "author": "@sunert", 
       "keys": [
         "youth_start", 
@@ -411,21 +411,7 @@
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
       ]
-    }, 
-    {
-      "author": "@sunert", 
-      "keys": [
-        "youth_autoread", 
-        "autotime_zq"
-      ], 
-      "settings": [
-      {
-          "id": "youth_cut", 
-          "val": false, 
-          "name": "缩减请求", 
-          "type": "boolean", 
-          "desc": "自动删除收益为0或者错误的阅读请求，使用完后请立即关闭，避免清空阅读请求"
-        },
+    },
     {
 			"id": "sy_youth_read",
 			"name": "中青自动阅读",
@@ -483,7 +469,7 @@
 			"icons": [
 				"https://raw.githubusercontent.com/Orz-3/mini/master/youth.png",
 				"https://raw.githubusercontent.com/Orz-3/task/master/youth.png"
-      ]
-    } 
-  ]
+			]
+		}
+	]
 }
