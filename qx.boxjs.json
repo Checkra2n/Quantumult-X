@@ -397,33 +397,35 @@
         "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
       ]
     }, 
-{
-      "id": "youthBanner",
-      "name": "中青看看赚",
-      "descs_html": [
-        "⚠️：带有android字眼的会话数据是抓安卓设备的app数据包的，只用ios的话，无视它的存在吧"
-      ],
-      "keys": ["youth_banner", "youth_android_readtime", "youth_android_reward", "youth_android_newtask", "youth_banner2", "youth_android_readtime2", "youth_android_reward2", "youth_android_newtask2", "youth_banner3", "youth_android_readtime3", "youth_android_reward3", "youth_android_newtask3", "youth_banner4", "youth_android_readtime4", "youth_android_reward4", "youth_android_newtask4"],
-      "author": "@ztxtop",
-      "settings": [{
-        "id": "delErrorData",
-        "name": "移除当日失败两次+的任务数据",
-        "val": "0",
-        "type": "radios",
-        "items": [{
-            "key": "0",
-            "label": "不移除"
-          },
-          {
-            "key": "1",
-            "label": "移除"
-          }
-        ]
-      }],
-      "repo": "https://github.com/ztxtop/x/blob/main/youth_banner.js",
-      "icons": ["https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/youth.png", "https://raw.githubusercontent.com/Orz-3/mini/master/Color/youth.png"],
-      "script": "https://raw.githubusercontent.com/ztxtop/x/main/youth_banner.js"
-    },
+   {
+      "author": "@sunert", 
+      "keys": [
+        "youth_start", 
+        "youth_look"
+      ], 
+      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth_gain.js", 
+      "id": "youthGain", 
+      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js", 
+      "name": "中青浏览赚&看看赚", 
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
+        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+      ]
+    }, 
+    {
+      "author": "@sunert", 
+      "keys": [
+        "youth_autoread", 
+        "autotime_zq"
+      ], 
+      "settings": [
+      {
+          "id": "youth_cut", 
+          "val": false, 
+          "name": "缩减请求", 
+          "type": "boolean", 
+          "desc": "自动删除收益为0或者错误的阅读请求，使用完后请立即关闭，避免清空阅读请求"
+        },
     {
 			"id": "sy_youth_read",
 			"name": "中青自动阅读",
