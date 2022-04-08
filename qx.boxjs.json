@@ -281,6 +281,60 @@
     "repo": "https://github.com/sazs34/TaskConfig/blob/master/task/sign_baidu_tieba_v2.js",
     "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/tieba.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/tieba.png"]
   }, 
+{
+      "id": "telegram",
+      "name": "皮卡车-TG推送",
+      "author": "@Curtin",
+      "keys": [
+        "TG_BOT_TOKEN","TG_USER_ID","TG_PROXY_HOST","TG_PROXY_PORT","TG_PROXY_AUTH","TG_API_HOST"
+      ],
+      "descs_html": [
+        "<h4 align=\"center\">非Node.js环境设置tg推送，为自助监控变量准备<br><br><a href=\"https://t.me/TopStyle2021\">[TG交流频道]</a></h4>"
+      ],
+      "settings": [
+
+        {
+          "id": "TG_BOT_TOKEN",
+          "name": "监控机器人token",
+          "val": "",
+          "type": "text",
+          "desc": "填写自己申请@BotFather的Token，如10xxx4:AAFcqxxxxgER5uw"
+        },
+        {
+          "id": "TG_USER_ID",
+          "name": "监控的群组id",
+          "val": "",
+          "type": "text",
+          "desc": "该群组需要添加监控机器人，且有权限发信息"
+        },
+        {
+          "id": "TG_PROXY_HOST",
+          "name": "代理IP（选填）",
+          "val": "",
+          "type": "text",
+          "desc": "填写代理IP地址，代理类型为 http，比如您代理是 http://127.0.0.1:1080，则填写 \"127.0.0.1\""
+        },
+        {
+          "id": "TG_PROXY_PORT",
+          "name": "代理端口（选填）",
+          "val": "",
+          "type": "text",
+          "desc": "填写代理端口号，代理类型为 http，比如您代理是 http://127.0.0.1:1080，则填写 \"1080\""
+        },
+        {
+          "id": "TG_PROXY_AUTH",
+          "name": "代理的认证参数（选填）",
+          "val": "",
+          "type": "text",
+          "desc": "代理的认证参数（选填）"
+        },
+        {
+          "id": "TG_API_HOST",
+          "name": "api自建反向代理地址（选填）",
+          "val": "",
+          "type": "text",
+          "desc": "api自建的反向代理地址(不懂可忽略,telegram机器人通知推送功能中非必填),默认tg官方api(环境变量名:TG_API_HOST)教程：https://www.hostloc.com/thread-805441-1-1.html，"
+        },
   {
     "id": "52poje",
     "name": "吾爱破解",
