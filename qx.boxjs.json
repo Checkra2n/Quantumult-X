@@ -245,7 +245,49 @@
     "repo": "https://github.com/NobyDa/Script/tree/master/JD-DailyBonus",
     "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/jd.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/jd.png"]
   }, 
-{
+  {
+    "id": "52poje",
+    "name": "吾爱破解",
+    "keys": ["CookieWA"],
+    "descs_html": [
+      "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js\">脚本注释</a></h4>"
+    ],
+    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js",
+    "author": "@NobyDa",
+    "repo": "https://github.com/NobyDa/Script/blob/master/52pojie-DailyBonus/52pojie.js",
+    "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/52pj.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/52pj.png"]
+  },
+    {
+      "id": "zjd",
+      "name": "赚京豆-瓜分京豆",
+      "author": "@Curtin",
+      "keys": [
+        "zjdbody"
+      ],
+      "descs_html": [
+        "<h4 align=\"center\">脚本说明点击查看<a href=\"https://gitee.com/curtinlv/Curtin/raw/master/Script/c_zjd_help.js\">脚本注释</a></h4>"
+      ],
+      "settings": [
+
+        {
+          "id": "zjdbody",
+          "name": "赚京豆助力Body",
+          "val": "",
+          "type": "text",
+          "desc": "赚京豆助力Body"
+        }
+      ],
+      "author": "@Curtin",
+      "repo": "https://gitee.com/curtinlv/Curtin/",
+      "script": "https://gitee.com/curtinlv/Curtin/raw/master/Script/c_zjd_help.js",
+      "icons": [
+        "https://gitee.com/curtinlv/img/raw/master/tx/pkc_7_135x135.png",
+        "https://gitee.com/curtinlv/img/raw/master/tx/pkc_7_135x135.png"
+      ]
+
+
+    },
+    {
       "id": "telegram",
       "name": "皮卡车-TG推送",
       "author": "@Curtin",
@@ -298,169 +340,15 @@
           "val": "",
           "type": "text",
           "desc": "api自建的反向代理地址(不懂可忽略,telegram机器人通知推送功能中非必填),默认tg官方api(环境变量名:TG_API_HOST)教程：https://www.hostloc.com/thread-805441-1-1.html，"
-   },
-  {
-    "id": "52poje",
-    "name": "吾爱破解",
-    "keys": ["CookieWA"],
-    "descs_html": [
-      "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js\">脚本注释</a></h4>"
-    ],
-    "script": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js",
-    "author": "@NobyDa",
-    "repo": "https://github.com/NobyDa/Script/blob/master/52pojie-DailyBonus/52pojie.js",
-    "icons": ["https://raw.githubusercontent.com/NobyDa/mini/master/Alpha/52pj.png", "https://raw.githubusercontent.com/NobyDa/mini/master/Color/52pj.png"]
-  },
-  {
-      "author": "@sunert", 
-      "descs_html": [
-        "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://github.com/Sunert/Scripts/raw/master/TaskConf/youth/readme.md\">配置说明</a></h4>", 
-        "<br />", 
-        "<p>其中zq_nick、zqcash和zqcard为昵称、提现金额和早起打卡开关，无需另外获取，相关项设置后自动生成，cashurl_zq和cashbody_zq为提现请求，获取后方可自动提现，可选</p>"
-      ], 
-      "keys": [
-        "zq_nick", 
-        "youthheader_zq", 
-        "read_zq", 
-        "readtime_zq", 
-        "cashurl_zq", 
-        "cashbody_zq", 
-        "zqcash", 
-        "zqcard"
-      ], 
-      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth.js", 
-      "id": "youth", 
-      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js", 
-      "settings": [
-        {
-          "id": "zqcard", 
-          "val": "false", 
-          "name": "打卡赚钱", 
-          "type": "boolean", 
-          "desc": "每日打卡报名及早起打卡"
-        }, 
-        {
-          "id": "zqtime", 
-          "val": "05", 
-          "name": "打卡时间", 
-          "type": "number", 
-          "desc": "每日早起打卡时间"
-        }, 
-        {
-          "id": "delay_rotary_zq", 
-          "val": "10", 
-          "name": "转盘时间间隔", 
-          "type": "number", 
-          "desc": "间隔时间设置，如1秒填1即可"
-        }, 
-        {
-          "id": "notifytimes", 
-          "val": "", 
-          "name": "通知频率 (点击查看设置说明)", 
-          "type": "number", 
-          "desc": "设定通知频率，前三次为全部通知，之后转盘次数/设定频率整除时通知，如设置0为无通知，设置1为全部通知，设置其他数可整除余0时通知，默认值50"
-        }, 
-        {
-          "id": "zqcash", 
-          "val": "30", 
-          "name": "提现金额", 
-          "type": "radios", 
-          "desc": "自动提现金额需和获取提现请求保持一致", 
-          "items": [
-            {
-              "key": "10", 
-              "label": "10元"
-            }, 
-            {
-              "key": "30", 
-              "label": "30元"
-            }, 
-            {
-              "key": "100", 
-              "label": "100元"
-            }
-          ]
         }
-      ], 
-      "name": "中青看点", 
+      ],
+      "author": "@Curtin",
+      "repo": "https://gitee.com/curtinlv/Curtin/",
+      "script": "https://gitee.com/curtinlv/Curtin/raw/master/Script/c_zjd_help.js",
       "icons": [
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
+        "https://gitee.com/curtinlv/img/raw/master/tx/pkc_7_135x135.png",
+        "https://gitee.com/curtinlv/img/raw/master/tx/pkc_7_135x135.png"
       ]
-    }, 
-    {
-      "author": "@sunert", 
-      "keys": [
-        "youth_start", 
-        "youth_look"
-      ], 
-      "repo": "https://github.com/Sunert/Scripts/blob/master/Task/youth_gain.js", 
-      "id": "youthGain", 
-      "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js", 
-      "name": "中青浏览赚&看看赚", 
-      "icons": [
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/youth.png", 
-        "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/youth.png"
-      ]
-    },
-    {
-			"id": "sy_youth_read",
-			"name": "中青自动阅读",
-			"keys": ["zqgetbody_body","zqgetbody_body1"],
-			"settings": [
-			 {
-          "id": "YOUNTH_READ_Notify",
-          "name": "静默运行",
-          "val": true,
-          "type": "boolean",
-          "desc": "运行脚本时不发出系统弹窗通知"
-        },
-				{
-					"id": "zqgetbody_body",
-					"name": "请求body",
-					"val": "",
-					"type": "textarea",
-					"autoGrow": false,
-					"rows": 1,
-					"desc": "阅读文章和看视频，倒计时转一圈显示青豆到账即可，多看几篇文章和视频，获得更多包数据"
-				}
-				,
-				{
-					"id": "zqgetbody_body1",
-					"name": "请求body",
-					"val": "",
-					"type": "textarea",
-					"autoGrow": false,
-					"rows": 1,
-					"desc": "阅读文章和看视频，倒计时转一圈显示青豆到账即可，多看几篇文章和视频，获得更多包数据"
-				}
-				,
-				{
-					"id": "zqgetbody_body_index",
-					"name": "上次执行位置",
-					"val": "",
-					"type": "textarea",
-					"autoGrow": false,
-					"rows": 1,
-					"desc": "记录上次执行的位置，可以控制从第几个body开始执行"
-				}
-				,
-				{
-					"id": "zqgetbody_body_index1",
-					"name": "上次执行位置",
-					"val": "",
-					"type": "textarea",
-					"autoGrow": false,
-					"rows": 1,
-					"desc": "记录上次执行的位置，可以控制从第几个body开始执行"
-				}
-			],
-			"author": "@syzzzf",
-			"repo": "https://github.com/songyangzz/QuantumultX/blob/master/YOUTH_READ.js",
-			"icons": [
-				"https://raw.githubusercontent.com/Orz-3/mini/master/youth.png",
-				"https://raw.githubusercontent.com/Orz-3/task/master/youth.png"
-			]
-		}
-	]
+    }
+  ]
 }
