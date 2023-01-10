@@ -110,6 +110,3 @@ https://hkj178.com/wp-json/mp/v2/advert/wechat url reject-200
 # 值会员权益中心banner广告
 ^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 
-# > 12 贝瓦儿歌 - (passport.beva.com)
-http:\/\/passport\.beva\.com\/passport\/v1\/sdk\/getuserinfo url script-response-body https://raw.githubusercontent.com/Game-2020/Scripts/main/bweg.js
-
