@@ -1,4 +1,4 @@
-hostname=mp.weixin.qq.com,wx.mygolbs.com,www.benbenfx.xyz,qj.bpojie.com,hkj178.com,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net,api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net,*kuwo*,*lrts*,*.xiuxiu.meitu.com,claritywallpaper.com,app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,passport.beva.com,picturebook.ipalfish.com
+hostname=mp.weixin.qq.com,wx.mygolbs.com,www.benbenfx.xyz,qj.bpojie.com,hkj178.com,-redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com,app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net,api.biliapi.net, -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net,*kuwo*,*lrts*,*.xiuxiu.meitu.com,claritywallpaper.com,app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,passport.beva.com
   
 # > 01 公眾號文章去廣告（2022-03-01）@ddgksf2013
 ^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
@@ -113,5 +113,3 @@ https://hkj178.com/wp-json/mp/v2/advert/wechat url reject-200
 # > 12 贝瓦儿歌 - (passport.beva.com)
 http:\/\/passport\.beva\.com\/passport\/v1\/sdk\/getuserinfo url script-response-body https://raw.githubusercontent.com/Game-2020/Scripts/main/bweg.js
 
-# > 13 伴鱼绘本 - (picturebook.ipalfish.com)
-; https://picturebook.ipalfish.com/pfapi(/profile/picturebook/get|/base/growthsystem/user/vip/equity/get) url script-response-body https://raw.githubusercontent.com/Game-2020/Scripts/main/byhb.js
